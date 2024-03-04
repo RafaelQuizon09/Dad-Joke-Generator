@@ -1,0 +1,56 @@
+body {
+    background: #f4f05b ;
+}
+.card {
+    border-radius: 40px;
+    border: 15px solid rgb(54, 123, 184);
+    background-color: #60a9c6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quoteGen{
+    padding-bottom: 40px;
+    font-size: 60px;
+    font-family: "Itim", cursive;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+#btnGenerate {
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 20px;
+}
+#btnGenerate:checked > #quoteGen{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+#adx {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    height: 100px;
+    width: auto;
+}
+#name {
+    font-size: 20px;
+    font-family: "Itim", cursive;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
